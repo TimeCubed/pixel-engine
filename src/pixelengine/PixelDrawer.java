@@ -12,12 +12,17 @@ import java.util.Arrays;
 public class PixelDrawer extends JComponent {
 	private int[][] pixels;
 	private Color drawColor;
+	private final int width, height, pixelSize;
 	
 	/**
 	 * Creates a new <code>PixelDrawer</code> object and initializes internal variables
 	 */
-	public PixelDrawer() {
-		pixels = new int[Constants.SCREEN_WIDTH][Constants.SCREEN_HEIGHT];
+	public PixelDrawer(int width, int height, int pixelSize) {
+		pixels = new int[width][height];
+		
+		this.width = width;
+		this.height = height;
+		this.pixelSize = pixelSize;
 		
 		drawColor = Color.BLACK;
 	}
@@ -26,11 +31,11 @@ public class PixelDrawer extends JComponent {
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		
-		for (int x = 0; x < Constants.SCREEN_WIDTH; x++) {
-			for (int y = 0; y < Constants.SCREEN_HEIGHT; y++) {
+		for (int x = 0; x < width; x++) {
+			for (int y = 0; y < width; y++) {
 				if (pixels[x][y] != 0) {
 					g.setColor(drawColor);
-					g.fillRect(x * Constants.PIXEL_SIZE, y * Constants.PIXEL_SIZE, Constants.PIXEL_SIZE, Constants.PIXEL_SIZE);
+					g.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
 				}
 			}
 		}
@@ -47,7 +52,7 @@ public class PixelDrawer extends JComponent {
 	 * Draws a pixel at the given coordinates
 	 */
 	public void drawPixel(int x, int y) {
-		if (x >= 0 && x < Constants.SCREEN_WIDTH && y >= 0 && y < Constants.SCREEN_HEIGHT) {
+		if (x >= 0 && x < width && y >= 0 && y < height) {
 			pixels[x][y] = drawColor.getRGB();
 		}
 	}
@@ -167,6 +172,6 @@ public class PixelDrawer extends JComponent {
 	}
 	
 	public void clearPixels() {
-		pixels = new int[Constants.SCREEN_WIDTH][Constants.SCREEN_HEIGHT];
+		pixels = new int[width][height];
 	}
 }
