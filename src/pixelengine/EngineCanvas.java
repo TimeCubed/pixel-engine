@@ -1,20 +1,39 @@
 package pixelengine;
 
-import java.util.ArrayList;
-import java.util.List;
+import pixelengine.util.Logger;
 
 public abstract class EngineCanvas {
-	// Current idea is to use a list that contains all the canvases
-	private static final List<EngineCanvas> canvases = new ArrayList<>();
+	private final int width, height, pixelSize;
+	public final PixelDrawer pixelDrawer;
+	private final String windowTitle;
+	public final Logger logger;
 	
-	public EngineCanvas() {
-		canvases.add(this);
+	public EngineCanvas(String windowTitle, int width, int height, int pixelSize) {
+		this.windowTitle = windowTitle;
+		
+		this.width = width;
+		this.height = height;
+		this.pixelSize = pixelSize;
+		
+		this.pixelDrawer = new PixelDrawer(width, height, pixelSize);
+		this.logger = new Logger("Canvas");
 	}
 	
-	public abstract void setup(PixelDrawer pixelDrawer);
-	public abstract void update(PixelDrawer pixelDrawer);
+	public abstract void update();
 	
-	protected List<EngineCanvas> getCanvases() {
-		return canvases;
+	public PixelDrawer getPixelDrawer() {
+		return pixelDrawer;
+	}
+	public String getWindowTitle() {
+		return windowTitle;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public int getWidth() {
+		return width;
+	}
+	public int getPixelSize() {
+		return pixelSize;
 	}
 }
