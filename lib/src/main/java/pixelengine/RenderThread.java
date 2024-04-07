@@ -2,7 +2,7 @@ package pixelengine;
 
 import pixelengine.util.Logger;
 
-public class RenderThread extends Thread implements Runnable {
+public class RenderThread {
 	private final Logger logger = new Logger("Render Thread");
 	private final PixelDrawer pixelDrawer;
 	private final EngineCanvas engineCanvas;
@@ -15,8 +15,7 @@ public class RenderThread extends Thread implements Runnable {
 		
 		this.fps = fps;
 	}
-	
-	@Override
+
 	public void run() {
 		logger.info("Render thread running at " + fps + " fps");
 		
