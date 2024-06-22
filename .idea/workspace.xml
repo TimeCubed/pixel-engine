@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a4c1fd-c963-4ba6-98c8-55b9da147bc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="00a4c1fd-c963-4ba6-98c8-55b9da147bc0" name="Changes" comment="Added README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/pixelengine/EngineEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/pixelengine/EngineEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/pixelengine/PixelDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/pixelengine/PixelDrawer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/pixelengine/EngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/pixelengine/EngineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelengine.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/EngineCanvas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/EngineEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/InputListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/PixelDrawer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/RenderThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/util/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/util/Vector2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pixelengine/util/Vector2Int.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userworkspace/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,38 +51,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TimeCubed&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TimeCubed/pixel-engine&quot;,
+    &quot;accountId&quot;: &quot;00cadd54-9697-4cd5-9fa4-149ed47613f5&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ekOCnta9DiL9IfSyUSZVtLvlGV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Magdy/stuff/Coding/Minecraft Clients/timeclient&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Magdy\stuff\Coding\Java\pixelengine\lib\src\main\java" />
       <recent name="C:\Users\Magdy\stuff\Coding\Java\pixelengine\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Run Engine Test">
+    <configuration name="Run Engine Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="pixelengine.EngineTest" />
       <module name="pixelengine.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="userworkspace.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,7 +107,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -120,17 +121,16 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Run Engine Test" />
       <item itemvalue="Gradle.pixelengine [build]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.pixelengine [build]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +143,34 @@
       <option name="presentableId" value="Default" />
       <updated>1712444986377</updated>
     </task>
+    <task id="LOCAL-00001" summary="Transitioned project to Gradle library project">
+      <created>1712451931041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712451931041</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added LICENSE">
+      <created>1712452610978</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712452610978</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added README.md">
+      <created>1712452619472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712452619472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Transitioned project to Gradle library project" />
+    <MESSAGE value="Added LICENSE" />
+    <MESSAGE value="Added README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
   </component>
 </project>

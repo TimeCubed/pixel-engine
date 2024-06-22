@@ -43,8 +43,8 @@ public class EngineEntryPoint {
 		logger.info("Finished engine setup in " + (System.currentTimeMillis() - startTime) + "ms");
 
 		// This doesn't start a new thread, but it does replace the main thread since there
-		// isn't anything else that needs to run on a separate thread. Naming convention
-		// sucks but it is what it is
+		// isn't anything else that needs to run on a separate thread. Naming sucks but it
+		// is what it is
 		RenderThread renderThread = new RenderThread(pixelDrawer, engineCanvas, 60);
 		renderThread.run();
 	}

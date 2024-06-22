@@ -31,12 +31,14 @@ public class PixelDrawer extends JComponent {
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		
+		g.setColor(drawColor);
 		for (int x = 0; x < width; x++) {
 			for (int y = 0; y < width; y++) {
-				if (pixels[x][y] != 0) {
-					g.setColor(drawColor);
-					g.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+				if (pixels[x][y] == 0) {
+					return;
 				}
+				
+				g.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
 			}
 		}
 	}
@@ -148,11 +150,26 @@ public class PixelDrawer extends JComponent {
 				int edge2 = edgeFunction(v1, v2, p);
 				int edge3 = edgeFunction(v2, v0, p);
 				
-				if (edge1 * windingOrder >= 0 && edge2 * windingOrder >= 0 && edge3 * windingOrder >= 0) {
+				// Neat and small optimization trick:
+				
+				// A positive integer will never have its last (or most significant bit) set
+				// and a negative integer will always have its last bit set. So, if any one
+				// of these integers are negative, the entire OR operation will return a
+				// negative number, and thus the whole expression will return false, skipping
+				// the draw operation.
+				// The winding order variable will just invert the result to make sure that the
+				// triangle is always rendered, regardless of how the vertices are wound.
+				if ((edge1 | edge2 | edge3) * windingOrder >= 0) {
 					drawPixel(x, y);
 				}
 			}
 		}
+	}
+	
+	public void fillTriangle(Triangle triangle) {
+		List<Vector2Int> vertices = triangle.getVertices();
+		
+		fillTriangle(vertices.get(0), vertices.get(1), vertices.get(2));
 	}
 	
 	/**
@@ -169,6 +186,15 @@ public class PixelDrawer extends JComponent {
 		// Fill the quad with the sorted vertices
 		fillTriangle(vertices.get(0), vertices.get(1), vertices.get(2));
 		fillTriangle(vertices.get(0), vertices.get(2), vertices.get(3));
+	}
+	
+	public void fillQuad(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3) {
+		fillQuad(
+			new Vector2Int(x0, y0),
+			new Vector2Int(x1, y2),
+			new Vector2Int(x2, y2),
+			new Vector2Int(x3, y3)
+		);
 	}
 	
 	public void clearPixels() {
