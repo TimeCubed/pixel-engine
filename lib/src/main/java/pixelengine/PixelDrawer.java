@@ -33,9 +33,9 @@ public class PixelDrawer extends JComponent {
 		
 		g.setColor(drawColor);
 		for (int x = 0; x < width; x++) {
-			for (int y = 0; y < width; y++) {
+			for (int y = 0; y < height; y++) {
 				if (pixels[x][y] == 0) {
-					return;
+					continue;
 				}
 				
 				g.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
